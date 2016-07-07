@@ -1,0 +1,1 @@
+"Hello World" demo app for Vanadium Core.

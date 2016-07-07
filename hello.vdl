@@ -1,0 +1,13 @@
+package hello
+
+import (
+    "v.io/v23/security/access"
+    "v.io/v23/services/permissions"
+)
+
+type Hello interface {
+  Get() (greeting string | error)  {access.Read}
+  Set(greeting string) error       {access.Write}
+
+  permissions.Object
+}
